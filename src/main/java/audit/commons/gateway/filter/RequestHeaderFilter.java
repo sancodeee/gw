@@ -47,7 +47,8 @@ public class RequestHeaderFilter implements HttpHeadersFilter.RequestHttpHeaders
             }
         }
         sw.stop();
-        log.debug("method = {}, uri = {}, request header names is {}, add request header names is {}, {}ns", request.getMethod(), request.getRequestURI(), headers.keySet(), keylogs, sw.getTotalTimeNanos());
+        log.debug("method = {}, uri = {}, request header names is {}, add request header names is {}, {}ns",
+                request.getMethod(), request.getRequestURI(), headers.keySet(), keylogs, sw.getTotalTimeNanos());
         return t;
     }
 
